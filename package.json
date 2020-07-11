@@ -1,0 +1,34 @@
+{
+  "name": "@reinv/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint shared configuration for Reinventary",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "test": "eslint ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bitgaming/reinv-eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "javascript"
+  ],
+  "author": "Dominic Chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bitgaming/reinv-eslint-config/issues"
+  },
+  "homepage": "https://github.com/bitgaming/reinv-eslint-config#readme",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "esm": "^3.2.25"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "eslint": "^6.8.0"
+  }
+}
