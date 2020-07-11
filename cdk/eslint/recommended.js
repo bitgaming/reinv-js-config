@@ -1,10 +1,5 @@
-// For typescript linting
-
-module.exports.default = {
-  parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint',
-  ],
+// Recommended linting
+module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',

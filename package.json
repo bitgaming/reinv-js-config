@@ -1,15 +1,15 @@
 {
-  "name": "@bitgaming/eslint-config-reinv",
-  "version": "0.2.4",
+  "name": "@bitgaming/reinv-js-config",
+  "version": "0.3.0",
   "description": "ESLint shared configuration for Reinventary",
   "main": "index.js",
   "module": "main.js",
   "scripts": {
-    "test": "eslint ./lib"
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/bitgaming/reinv-eslint-config.git"
+    "url": "git+ssh://git@github.com/bitgaming/reinv-js-config.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/bitgaming"
@@ -22,9 +22,9 @@
   "author": "Dominic Chan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bitgaming/reinv-eslint-config/issues"
+    "url": "https://github.com/bitgaming/reinv-js-config/issues"
   },
-  "homepage": "https://github.com/bitgaming/reinv-eslint-config#readme",
+  "homepage": "https://github.com/bitgaming/reinv-js-config#readme",
   "dependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
