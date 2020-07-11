@@ -1,6 +1,6 @@
 {
-  "name": "@reinv/eslint-config",
-  "version": "1.0.0",
+  "name": "@bitgaming/eslint-config-reinv",
+  "version": "0.1.0",
   "description": "ESLint shared configuration for Reinventary",
   "main": "index.js",
   "module": "main.js",
@@ -10,6 +10,9 @@
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/bitgaming/reinv-eslint-config.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/bitgaming"
   },
   "keywords": [
     "eslint",
