@@ -1,0 +1,28 @@
+name: Code scan
+# This workflow is triggered on pushes to the repository.
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: ShiftLeft
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: git checkout ${{ github.sha }}
+
+      - name: Perform ShiftLeft Scan
+        uses: ShiftLeftSecurity/scan-action@master
+        env:
+          SCAN_AUTO_BUILD: true
+          SCAN_MODE: ci
+        with:
+          output: reports
+
+      - uses: actions/upload-artifact@v2.0.1
+        with:
+          name: reports
+          path: reports
