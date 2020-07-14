@@ -12,7 +12,7 @@ Configuration files including:
     ```json
     {
         "dependencies": {
-            "@bitgaming/reinv-js-config": "git+ssh://git@github.com:bitgaming/reinv-js-config.git#semver:^1.0.1",
+            "@bitgaming/reinv-js-config": "git+ssh://git@github.com:bitgaming/reinv-js-config.git#semver:^1.0.0",
         }
     }
     ```
@@ -26,12 +26,16 @@ Configuration files including:
     #### Example `.eslintrc.js`
 
     ```javascript
-    module.exports = {
-        "parserOptions": {
-            "ecmaVersion": 6,
-        },
-        ...require('@bitgaming/reinv-js-config/cdk/eslintrc'),
-    }
+    module.exports = require('@bitgaming/reinv-js-config/cdk/eslintrc')(
+        {
+            "parserOptions": {
+                "ecmaVersion": 6,
+            },
+            "rules": [
+                '@typescript-eslint/no-explicit-any': 'off',
+            ],
+        }
+    )
     ```
 
     #### Example `tsconfig.json`
