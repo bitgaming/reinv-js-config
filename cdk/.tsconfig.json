@@ -9,12 +9,12 @@
         "suppressWhileTypeErrorsPresent": false
       }
     ],
-    "target": "ES2018",
+    "target": "ES2020",
     "module": "commonjs",
     "lib": [
-      "es2018"
+      "es2020"
     ],
-    "declaration": true,
+    "compileOnSave": true,
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,

@@ -12,14 +12,16 @@ Configuration files including:
     ```json
     {
         "dependencies": {
-            "@bitgaming/reinv-js-config": "git+ssh://git@github.com:bitgaming/reinv-js-config.git#semver:^0.3.0",
+            "@bitgaming/reinv-js-config": "git+ssh://git@github.com:bitgaming/reinv-js-config.git#semver:^1.0.0",
         }
     }
     ```
 
     > semver is the same as git tag of this repo
 
-2. Extend local config files in your repo
+2. Make sure you have resolve all the `peerDependencies`, you can check the warning messages once you have `npm`/`yarn` install
+
+3. Extend local config files in your repo
 
     #### Example `.eslintrc.js`
 
