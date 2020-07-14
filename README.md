@@ -31,9 +31,9 @@ Configuration files including:
             "parserOptions": {
                 "ecmaVersion": 6,
             },
-            "rules": [
+            "rules": {
                 '@typescript-eslint/no-explicit-any': 'off',
-            ],
+            },
         }
     )
     ```
