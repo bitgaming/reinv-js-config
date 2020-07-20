@@ -1,9 +1,9 @@
 # Shared Javascript Configuration
 
 Configuration files including:
-- TypeScript: `tsconfig.json`
-- ESLint: `.eslintrc.js`
-- Jest: `jest.config.js`
+- TypeScript: `tsconfig.json`. [TS Config Reference](https://www.typescriptlang.org/tsconfig)
+- ESLint: `.eslintrc.js`. [Configuring ESLint](https://eslint.org/docs/user-guide/configuring)
+- Jest: `jest.config.js`. [Jest Configuration](https://jestjs.io/docs/en/configuration)
 
 ## How to use
 
@@ -39,7 +39,6 @@ Configuration files including:
     ```
 
     #### Example `tsconfig.json`
-
     ```json
     {
         "extends": "@bitgaming/reinv-js-config/cdk/.tsconfig",
