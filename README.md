@@ -11,7 +11,7 @@ Configuration files including:
 
     ```json
     {
-        "dependencies": {
+        "devDependencies": {
             "@bitgaming/reinv-js-config": "git+ssh://git@github.com:bitgaming/reinv-js-config.git#semver:^1.0.1",
         }
     }
