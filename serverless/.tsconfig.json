@@ -1,14 +1,12 @@
 {
   "compilerOptions": {
-    "plugins": [
-      {
-        "name": "typescript-tslint-plugin",
-        "alwaysShowRuleFailuresAsWarnings": false,
-        "ignoreDefinitionFiles": true,
-        "configFile": ".",
-        "suppressWhileTypeErrorsPresent": false
-      }
-    ],
+    "plugins": [{
+      "name": "typescript-tslint-plugin",
+      "alwaysShowRuleFailuresAsWarnings": false,
+      "ignoreDefinitionFiles": true,
+      "configFile": ".",
+      "suppressWhileTypeErrorsPresent": false
+    }],
     "target": "ES2020",
     "module": "commonjs",
     "lib": [
@@ -33,5 +31,10 @@
   "compileOnSave": true,
   "exclude": [
     "__tests__"
-  ]
+  ],
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true
+  }
 }
