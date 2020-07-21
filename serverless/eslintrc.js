@@ -17,7 +17,8 @@ module.exports = function base(...sources) {
       },
       "env": {
         "node": true,
-        "jest": true
+        "jest": true,
+        "es6": true
       }
     },
     ...sources,
