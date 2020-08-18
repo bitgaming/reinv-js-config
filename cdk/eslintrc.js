@@ -10,7 +10,8 @@ module.exports = function base(...sources) {
         'semi': ['error', 'never'],
         'indent': ['error', 2],
         'no-empty': ['error', { 'allowEmptyCatch': true }],
-        'no-trailing-spaces': 'error'
+        'no-trailing-spaces': 'error',
+        '@typescript-eslint/keyword-spacing': ['error'],
       },
     },
     ...sources,
