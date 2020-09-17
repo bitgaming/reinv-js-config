@@ -17,10 +17,6 @@ module.exports = function base(...sources) {
             delimiter: 'none',
             requireLast: true,
           },
-          singleline: {
-            delimiter: 'none',
-            requireLast: false,
-          },
         }]
       },
     },
