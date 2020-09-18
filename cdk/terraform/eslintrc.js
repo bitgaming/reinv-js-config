@@ -8,7 +8,7 @@ module.exports = function base(...sources) {
       root: true,
       rules: {
         'semi': ['error', 'never'],
-        'indent': ['error', 2],
+        'indent': ['error', 2, { 'SwitchCase': 1 }],
         'no-empty': ['error', { 'allowEmptyCatch': true }],
         'no-trailing-spaces': 'error',
         '@typescript-eslint/keyword-spacing': ['error'],
@@ -19,6 +19,10 @@ module.exports = function base(...sources) {
           },
         }]
       },
+      extends: [
+        "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
+        "plugin:prettier/recommended" // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+      ],
     },
     ...sources,
   )
