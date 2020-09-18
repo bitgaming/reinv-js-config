@@ -1,4 +1,4 @@
-const merge = require('../lib/merge')
+const merge = require('../../lib/merge')
 
 module.exports = function base(...sources) {
   return merge(
