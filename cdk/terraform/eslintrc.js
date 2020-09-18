@@ -8,7 +8,7 @@ module.exports = function base(...sources) {
       root: true,
       rules: {
         'semi': ['error', 'never'],
-        'indent': ['error', 2, { 'SwitchCase': 1 }],
+        'indent': 'off',
         'no-empty': ['error', { 'allowEmptyCatch': true }],
         'no-trailing-spaces': 'error',
         '@typescript-eslint/keyword-spacing': ['error'],
