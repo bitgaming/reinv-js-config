@@ -1,18 +1,28 @@
-const merge = require('../lib/merge')
+const merge = require('../../lib/merge')
 
 module.exports = function base(...sources) {
   return merge(
-    require('../lib/eslint/parser'),
-    require('../lib/eslint/recommended'),
+    require('../../lib/eslint/parser'),
+    require('../../lib/eslint/recommended'),
     {
       root: true,
       rules: {
         'semi': ['error', 'never'],
-        'indent': ['error', 2],
+        'indent': 'off',
         'no-empty': ['error', { 'allowEmptyCatch': true }],
         'no-trailing-spaces': 'error',
         '@typescript-eslint/keyword-spacing': ['error'],
+        '@typescript-eslint/member-delimiter-style': ['error', {
+          multiline: {
+            delimiter: 'none',
+            requireLast: true,
+          },
+        }]
       },
+      extends: [
+        "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
+        "plugin:prettier/recommended" // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+      ],
     },
     ...sources,
   )
