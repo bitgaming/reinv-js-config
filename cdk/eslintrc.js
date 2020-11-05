@@ -1,9 +1,9 @@
-const merge = require('../../lib/merge')
+const merge = require('../lib/merge')
 
 module.exports = function base(...sources) {
   return merge(
-    require('../../lib/eslint/parser'),
-    require('../../lib/eslint/recommended'),
+    require('../lib/eslint/parser'),
+    require('../lib/eslint/recommended'),
     {
       root: true,
       rules: {
