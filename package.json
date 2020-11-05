@@ -1,6 +1,6 @@
 {
   "name": "@bitgaming/reinv-js-config",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "ESLint shared configuration for Reinventary",
   "main": "index.js",
   "module": "main.js",
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/bitgaming/reinv-js-config#readme",
   "dependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "7.7.0",
+    "eslint": "^7.12.1",
     "esm": "^3.2.25"
   },
   "peerDependencies": {
