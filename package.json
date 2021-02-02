@@ -1,6 +1,6 @@
 {
   "name": "@bitgaming/reinv-js-config",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "ESLint shared configuration for Reinventary",
   "main": "index.js",
   "module": "main.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/bitgaming/reinv-js-config.git"
+    "url": "git+https://github.com/bitgaming/reinv-js-config.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/bitgaming"
