@@ -12,7 +12,7 @@ Configuration files including:
     ```json
     {
         "devDependencies": {
-            "@bitgaming/reinv-js-config": "git+https://github.com/bitgaming/reinv-js-config.git#semver:^1.2.3",
+            "@bitgaming/reinv-js-config": "git+https://github.com/bitgaming/reinv-js-config.git#semver:^1.4.2",
         }
     }
     ```
