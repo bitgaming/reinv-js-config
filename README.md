@@ -12,7 +12,7 @@ Configuration files including:
     ```json
     {
         "devDependencies": {
-            "@bitgaming/reinv-js-config": "git+https://github.com/bitgaming/reinv-js-config.git#semver:^1.4.2",
+            "@bitgaming/reinv-js-config": "git+https://github.com/bitgaming/reinv-js-config.git#semver:^1.4.3",
         }
     }
     ```
@@ -25,8 +25,9 @@ Configuration files including:
 
     #### Example `.eslintrc.js`
 
+    *Replace {category} with the folder of project category*
     ```javascript
-    module.exports = require('@bitgaming/reinv-js-config/cdk/eslintrc')(
+    module.exports = require('@bitgaming/reinv-js-config/{category}/eslintrc')(
         {
             "parserOptions": {
                 "ecmaVersion": 6,
@@ -39,14 +40,34 @@ Configuration files including:
     ```
 
     #### Example `tsconfig.json`
+
+    *Replace {category} with the folder of project category*
     ```json
     {
-        "extends": "@bitgaming/reinv-js-config/cdk/.tsconfig",
+        "extends": "@bitgaming/reinv-js-config/{category}/.tsconfig",
         "exclude": [
             "cdk.out"
         ]
     }
     ```
+
+4. *(Optional for prettier)* In order to auto-format with `eslint-prettier`, add the following config inside your VSCode preference (JSON):
+   ```json
+   {
+       "[typescript]": {
+           "editor.formatOnSave": false,
+           "editor.codeActionsOnSave": {
+               // For ESLint
+               "source.fixAll.eslint": true
+           },
+       },
+       ...
+   }
+   ```
+
+    This will override the default formatter from VSCode, please make sure you already setup eslint prettier in the project. Application config with prettier:
+    - `/serverless/prettier`
+    - `/cdk`
 
 ## Contribute
 
