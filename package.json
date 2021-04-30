@@ -1,6 +1,6 @@
 {
   "name": "@bitgaming/reinv-js-config",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "ESLint shared configuration for Reinventary",
   "main": "index.js",
   "module": "main.js",
